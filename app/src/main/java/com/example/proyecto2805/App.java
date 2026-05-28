@@ -3,6 +3,8 @@
  */
 package com.example.proyecto2805;
 
+import java.util.Scanner;
+
 public class App {
     public String getGreeting() {
         return "Hola Josué";
@@ -11,5 +13,22 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
         System.out.println("hola munfo2");
+        tabla_multiplicar();
+    }
+    public static void tabla_multiplicar(){
+        System.out.println("TABLA DE MULTIPLICAR DE UN NÚMERO");
+        System.out.println("Ingrese un número para mostrar su tabla");
+        Scanner sc = new Scanner(System.in);
+        int numero = sc.nextInt();
+        
+        
+        for (int i = 1; i <= 12; i++) {
+            int multi = i*numero;
+            System.out.println("La multiplicacion de "+ i + " por " + numero + " es igual a " + multi);
+        
+        
+            
+        }
+        
     }
 }
