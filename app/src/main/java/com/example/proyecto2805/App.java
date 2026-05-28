@@ -5,10 +5,11 @@ package com.example.proyecto2805;
 
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hola Josué";
     }
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        System.out.println("hola munfo2");
     }
 }
