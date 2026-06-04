@@ -327,6 +327,39 @@ public class celsius a fahrenheit {
     }
             }
     }
+    import java.util.Scanner;
+
+public class NumeroPrimo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.util.System.in);
+        
+        System.out.print("Introduce un número entero positivo: ");
+        int numero = scanner.nextInt();
+        
+        // Los números menores o iguales a 1 no son primos
+        if (numero <= 1) {
+            System.out.println("El número " + numero + " no es primo.");
+        } else {
+            boolean esPrimo = true;
+            
+            // Evaluamos si es divisible por algún número entre 2 y la raíz del número
+            for (int i = 2; i <= Math.sqrt(numero); i++) {
+                if (numero % i == 0) {
+                    esPrimo = false; // Encontró un divisor, ya no es primo
+                    break;
+                }
+            }
+            
+            if (esPrimo) {
+                System.out.println("El número " + numero + " SÍ es primo.");
+            } else {
+                System.out.println("El número " + numero + " NO es primo.");
+            }
+        }
+        
+        scanner.close();
+    }
+}
 }
 
 
