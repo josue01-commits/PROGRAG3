@@ -445,6 +445,31 @@ public class MainPOO {
         System.out.println("Saldo final: $" + cuentaDeCarlos.getSaldo());
     }
 }
+import java.util.Scanner;
+
+public class FibonacciRecursivo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Introduce cuántos números de la serie quieres ver: ");
+        int limite = scanner.nextInt();
+
+        System.out.println("Serie Fibonacci de " + limite + " términos:");
+        for (int i = 0; i < limite; i++) {
+            System.out.print(calcularFibonacci(i) + " ");
+        }
+        scanner.close();
+    }
+
+    // Método recursivo
+    public static int calcularFibonacci(int n) {
+        // Casos base
+        if (n == 0) return 0;
+        if (n == 1) return 1;
+        
+        // Llamada recursiva: F(n) = F(n-1) + F(n-2)
+        return calcularFibonacci(n - 1) + calcularFibonacci(n - 2);
+    }
+}
 }
 }
 }
