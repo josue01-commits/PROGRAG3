@@ -126,3 +126,71 @@ public class PosNeg {
         scanner.close();
     }
 }
+
+//Ejercicio Liliana 
+
+//1. Area de un Circulo
+
+public class AreadeunCirculo{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        // area de un circulo 
+        
+       //radio del circulo
+       
+        System.out.println("algoritmo para calcular el area de un circulo");
+        System.out.println("ingrese el radio");
+        double radio=sc.nextDouble();//guardando el radio
+         
+        double area = Math.PI * radio * radio;
+        
+        System.out.println("el area de un circulo es"+ area);
+       
+    }
+  }
+}
+
+ //2. Una persona puede votar 
+
+import java.util.Scanner;
+
+public class VOTAR {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ingrese su edad");
+        int edad = sc.nextInt();
+
+        if (edad >= 18) {
+            System.out.println("Puede votar");
+        } else {
+            System.out.println("No puede votar");
+        }
+    }
+}
+//3.Suma de numeros del 1 al N
+public class SumarNumeros {
+   
+
+    public static void main(String[] args){
+    
+      
+        Scanner sc= new Scanner(System.in);{
+            //sumar numeros del 1 hasta N
+            // Pedir al estudiante  que ingrese el valor de N
+            System.out.print("Ingrese el valor de N: ");
+            int n = sc.nextInt();
+            // Variable para almacenar la suma acumulada
+            int suma = 0;
+            // Bucle que recorre desde 1 hasta N y suma cada número
+            for (int i = 1; i <= n; i++) {
+                suma = suma + i; // Acumular el valor actual en la suma
+            }  // Mostrar el resultado final
+            System.out.println("La suma de los números del 1 hasta " + n + " es: " + suma);
+           
+        }
+     }
+ }
