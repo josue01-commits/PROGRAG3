@@ -5,6 +5,8 @@ package com.example.proyecto2805;
 
 import java.util.Scanner;
 
+// EJERCICIOS JOSUÉ
+
 public class App {
     public String getGreeting() {
         return "Hola Josué";
@@ -31,4 +33,31 @@ public class App {
         }
         
     }
+
+    public class HolaMundoPersonalizado {
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Ingresa tu nombre: ");
+            String nombre = scanner.nextLine();
+            
+            System.out.println("¡Hola, " + nombre + "! Bienvenido/a a Java.");
+        }
+    }
+
+    public class ParOImpar {
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Ingresa un número entero: ");
+            int numero = scanner.nextInt();
+            
+            if (numero % 2 == 0) {
+                System.out.println("El número " + numero + " es par.");
+            } else {
+                System.out.println("El número " + numero + " es impar.");
+            }
+        }
+    }
+}
+}
+    
 }
