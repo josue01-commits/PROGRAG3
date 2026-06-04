@@ -359,6 +359,30 @@ public class NumeroPrimo {
         
         scanner.close();
     }
+    import java.util.Scanner;
+
+public class Palindromo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Introduce una palabra o frase: ");
+        String texto original = scanner.nextLine();
+        
+        // Limpiamos el texto: quitamos espacios y lo pasamos a minúsculas
+        String textoLimpio = original.replace(" ", "").toLowerCase();
+        
+        // Invertimos la cadena usando StringBuilder
+        String textoInvertido = new StringBuilder(textoLimpio).reverse().toString();
+        
+        // Comparamos si el limpio y el invertido son iguales
+        if (textoLimpio.equals(textoInvertido)) {
+            System.out.println("\"" + original + "\" es un palíndromo.");
+        } else {
+            System.out.println("\"" + original + "\" NO es un palíndromo.");
+        }
+        
+        scanner.close();
+    }
+}
 }
 }
 
