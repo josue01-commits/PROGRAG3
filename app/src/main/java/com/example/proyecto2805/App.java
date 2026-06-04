@@ -546,7 +546,7 @@ public class MayorEdad {
         if (edad >= 18) {
             System.out.println("Eres mayor de edad. ¡Bienvenido!");
         } else {
-            System.out.println("Eres menor de edad. Acceso restringido.");
+            System.out.println("Eres menor de edad. Acceso denegado.");
         }
         
         teclado.close();
