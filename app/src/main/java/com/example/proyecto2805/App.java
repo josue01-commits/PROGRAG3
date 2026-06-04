@@ -61,3 +61,68 @@ public class App {
 }
     
 }
+
+//codigos damaris :D
+// ============================================
+// 1. MAYOR DE EDAD
+// ============================================
+import java.util.Scanner;
+
+public class MayorDeEdad {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("=== MAYOR DE EDAD ===");
+        System.out.print("¿Cuántos años tienes? ");
+        int edad = scanner.nextInt();
+
+        if (edad >= 18) {
+            System.out.println("Eres MAYOR de edad.");
+        } else {
+            System.out.println("Eres MENOR de edad.");
+            System.out.println("Te faltan " + (18 - edad) + " años para ser mayor.");
+        }
+
+        scanner.close();
+    }
+}
+
+// ============================================
+// 2. CONTAR DEL 1 AL 10
+// ============================================
+public class ContarNumeros {
+    public static void main(String[] args) {
+
+        System.out.println("=== CONTANDO DEL 1 AL 10 ===");
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("Número: " + i);
+        }
+
+        System.out.println("¡Listo!");
+    }
+}
+
+// ============================================
+// 3. NÚMERO POSITIVO O NEGATIVO
+// ============================================
+import java.util.Scanner;
+
+public class PosNeg {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingresa un número: ");
+        int numero = scanner.nextInt();
+
+        if (numero > 0) {
+            System.out.println("El número es POSITIVO.");
+        } else if (numero < 0) {
+            System.out.println("El número es NEGATIVO.");
+        } else {
+            System.out.println("El número es CERO.");
+        }
+
+        scanner.close();
+    }
+}
