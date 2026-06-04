@@ -382,6 +382,69 @@ public class Palindromo {
         
         scanner.close();
     }
+    // Clase que define el objeto CuentaBancaria
+class CuentaBancaria {
+    // Atributos privados (Encapsulamiento)
+    private String titular;
+    private double saldo;
+
+    // Constructor
+    public CuentaBancaria(String titular, double saldoInicial) {
+        this.titular = titular;
+        if (saldoInicial > 0) {
+            this.saldo = saldoInicial;
+        } else {
+            this.saldo = 0;
+        }
+    }
+
+    // Método para depositar dinero
+    public void depositar(double cantidad) {
+        if (cantidad > 0) {
+            this.saldo += cantidad;
+            System.out.println("Depósito exitoso de $" + cantidad);
+        } else {
+            System.out.println("La cantidad a depositar debe ser positiva.");
+        }
+    }
+
+    // Método para retirar dinero
+    public void retirar(double cantidad) {
+        if (cantidad > 0 && cantidad <= this.saldo) {
+            this.saldo -= cantidad;
+            System.out.println("Retiro exitoso de $" + cantidad);
+        } else {
+            System.out.println("Fondos insuficientes o cantidad inválida.");
+        }
+    }
+
+    // Getter para consultar el saldo de forma segura
+    public double getSaldo() {
+        return this.saldo;
+    }
+
+    public String getTitular() {
+        return this.titular;
+    }
+}
+
+// Clase principal para ejecutar el programa
+public class MainPOO {
+    public static void main(String[] args) {
+        // Creamos una instancia (objeto) de CuentaBancaria
+        CuentaBancaria cuentaDeCarlos = new CuentaBancaria("Carlos Gómez", 500.0);
+
+        System.out.println("Titular: " + cuentaDeCarlos.getTitular());
+        System.out.println("Saldo inicial: $" + cuentaDeCarlos.getSaldo());
+
+        // Operaciones
+        cuentaDeCarlos.depositar(150.50);
+        cuentaDeCarlos.retirar(100.00);
+        cuentaDeCarlos.retirar(600.00); // Intento de sobregiro
+
+        System.out.println("Saldo final: $" + cuentaDeCarlos.getSaldo());
+    }
+}
 }
 }
 }
