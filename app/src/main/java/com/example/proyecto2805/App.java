@@ -4,6 +4,7 @@
 package com.example.proyecto2805;
 
 import java.util.Scanner;
+import javax.lang.model.SourceVersion;
 
 // EJERCICIOS JOSUÉ
 
@@ -59,6 +60,11 @@ public class App {
     }
 }
 }
+
+    @Override
+    public SourceVersion getSupportedSourceVersion() {
+        return SourceVersion.latest();
+    }
     
 }
 
@@ -194,3 +200,64 @@ public class SumarNumeros {
         }
      }
  }
+
+//Ejercicios Carolina
+//1.-Calcular el area de un rectangulo
+ import java.util.Scanner;
+
+ public class area de un rectangulo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese la base: ");
+        double base = sc.nextDouble();
+
+        System.out.print("Ingrese la altura: ");
+        double altura = sc.nextDouble();
+
+        double area = base * altura;
+
+        System.out.println("El área del rectángulo es: " + area);
+
+        sc.close();
+    }
+}
+
+//2.-suma de numeros
+import java.util.Scanner;
+
+ public class suma de numeros {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+
+        System.out.print("Ingrese el primer número: ");
+        int n1 = sc.nextInt();
+
+        System.out.print("Ingrese el segundo número: ");
+        int n2 = sc.nextInt();
+
+        int suma = n1 + n2;
+
+        System.out.println("La suma es: " + suma);
+
+        sc.close();
+    }
+}
+//3.-Celsius a Fahrenheit
+public class celsius a fahrenheit {
+     public static void main(String[] args) {
+        
+     Scanner sc =new Scanner(System.in);{
+    
+        //Convertir grados Celsius a Fahrenheit
+        
+         System.out.println("-----Algoritmo para convertir de celsius a Fahrenheit-----");
+         System.out.println("Ingrese los grados celsius:");//ingresando grados
+         double celsius=sc.nextDouble();//guardando celsius
+         
+         double Fahrenheit=((celsius*9/5)+32);
+         System.out.println("Los grados Fahrenheit del los celsius es: "+Fahrenheit);
+         sc.close();
+    }
+     } 
+}
