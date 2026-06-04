@@ -308,4 +308,22 @@ public class celsius a fahrenheit {
         System.out.println("Los elementos del arreglo suman en total: " + suma);
     }
 }
+            public class InversionCadena {
+    public static void main(String[] args) {
+        String textoOriginal = "Java";
+        String textoInvertido = invertir(textoOriginal);
+        
+        System.out.println("Original: " + textoOriginal);
+        System.out.println("Invertido: " + textoInvertido);
+    }
+
+    public static String invertir(String str) {
+        String resultado = "";
+        // Recorremos la cadena desde el último índice hasta el cero
+        for (int i = str.length() - 1; i >= 0; i--) {
+            resultado += str.charAt(i); // Concatenamos cada carácter
+        }
+        return resultado;
+    }
+}
 }
