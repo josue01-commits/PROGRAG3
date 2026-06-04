@@ -568,6 +568,7 @@ public class PromedioNotas {
         double promedio = suma / notas.length;
         
         System.out.println("El promedio final de las " + notas.length + " notas es: " + promedio);
+        System.out.println("gracias por elegirnos");
     }
 }
 }
