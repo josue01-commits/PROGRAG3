@@ -275,5 +275,21 @@ public class celsius a fahrenheit {
                 System.out.println("Los grados Fahrenheit del los celsius es: "+Fahrenheit);
                 sc.close();
             }
-            xd
+
+            
+
+            public class Saludo {
+                public static void main(String[] args) {
+                    // Creamos el objeto Scanner para leer el teclado
+                    Scanner teclado = new Scanner(System.in);
+
+                    System.out.print("Por favor, introduce tu nombre: ");
+                    String nombre = teclado.nextLine(); // Guarda el texto que escribas
+
+                    // Saludamos usando la variable
+                    System.out.println("¡Hola, " + nombre + "! Bienvenido al mundo de Java.");
+
+                    teclado.close(); // Buena práctica: cerrar el Scanner
+                }
+            }
 }
