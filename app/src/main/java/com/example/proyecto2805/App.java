@@ -259,5 +259,21 @@ public class celsius a fahrenheit {
          System.out.println("Los grados Fahrenheit del los celsius es: "+Fahrenheit);
          sc.close();
     }
-     } 
+     }
+    public class celsius a fahrenheit {
+        public static void main(String[] args) {
+
+            Scanner sc =new Scanner(System.in);{
+
+                //Convertir grados Celsius a Fahrenheit
+
+                System.out.println("-----Algoritmo para convertir de celsius a Fahrenheit-----");
+                System.out.println("Ingrese los grados celsius:");//ingresando grados
+                double celsius=sc.nextDouble();//guardando celsius
+
+                double Fahrenheit=((celsius*9/5)+32);
+                System.out.println("Los grados Fahrenheit del los celsius es: "+Fahrenheit);
+                sc.close();
+            }
+            xd
 }
