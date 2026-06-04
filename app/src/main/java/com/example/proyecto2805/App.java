@@ -470,6 +470,42 @@ public class FibonacciRecursivo {
         return calcularFibonacci(n - 1) + calcularFibonacci(n - 2);
     }
 }
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class DivisionSegura {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Usamos una estructura try-catch para capturar posibles fallos
+        try {
+            System.out.print("Introduce el numerador (dividendo): ");
+            int numerador = scanner.nextInt();
+            
+            System.out.print("Introduce el denominador (divisor): ");
+            int divisor = scanner.nextInt();
+            
+            // Esto puede lanzar una ArithmeticException si divisor es 0
+            int resultado = numerador / divisor; 
+            
+            System.out.println("El resultado de la división es: " + resultado);
+            
+        } catch (InputMismatchException e) {
+            // Captura si el usuario escribe letras en vez de números
+            System.out.println("Error: ¡Debes introducir obligatoriamente números enteros!");
+        } catch (ArithmeticException e) {
+            // Captura la división por cero
+            System.out.println("Error matemático: No es posible dividir entre cero (0).");
+        } catch (Exception e) {
+            // Captura cualquier otro error genérico no previsto
+            System.out.println("Ocurrió un error inesperado: " + e.getMessage());
+        } finally {
+            // El bloque 'finally' se ejecuta SIEMPRE, haya error o no
+            System.out.println("Cerrando recursos del sistema...");
+            scanner.close();
+        }
+    }
+}
 }
 }
 }
