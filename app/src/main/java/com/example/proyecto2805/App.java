@@ -533,6 +533,25 @@ public class SumaCien {
         System.out.println("La suma de los números del 1 al 100 es: " + suma);
     }
 }
+import java.util.Scanner;
+
+public class MayorEdad {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.print("Por favor, introduce tu edad: ");
+        int edad = teclado.nextInt();
+        
+        // Condicional IF / ELSE
+        if (edad >= 18) {
+            System.out.println("Eres mayor de edad. ¡Bienvenido!");
+        } else {
+            System.out.println("Eres menor de edad. Acceso restringido.");
+        }
+        
+        teclado.close();
+    }
+}
 }
 }
 }
