@@ -506,6 +506,21 @@ public class DivisionSegura {
         }
     }
 }
+public class Intercambio {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+        
+        System.out.println("Antes del intercambio: a = " + a + ", b = " + b);
+        
+        // Proceso de intercambio
+        int auxiliar = a; // Guardamos el valor de 'a' (5) en el vaso vacío
+        a = b;            // Pasamos el valor de 'b' (10) a 'a'. Ahora 'a' vale 10
+        b = auxiliar;     // Pasamos el valor guardado (5) a 'b'. Ahora 'b' vale 5
+        
+        System.out.println("Después del intercambio: a = " + a + ", b = " + b);
+    }
+}
 }
 }
 }
