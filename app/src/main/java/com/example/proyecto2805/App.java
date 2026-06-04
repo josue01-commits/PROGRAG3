@@ -552,6 +552,24 @@ public class MayorEdad {
         teclado.close();
     }
 }
+public class PromedioNotas {
+    public static void main(String[] args) {
+        // Creamos un array con 5 notas decimales
+        double[] notas = {8.5, 7.0, 9.2, 6.5, 10.0};
+        
+        double suma = 0;
+        
+        // Recorremos el array sumando cada nota
+        for (int i = 0; i < notas.length; i++) {
+            suma += notas[i]; 
+        }
+        
+        // Calculamos el promedio dividiendo la suma entre el total de elementos
+        double promedio = suma / notas.length;
+        
+        System.out.println("El promedio final de las " + notas.length + " notas es: " + promedio);
+    }
+}
 }
 }
 }
