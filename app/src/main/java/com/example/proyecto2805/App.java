@@ -292,4 +292,20 @@ public class celsius a fahrenheit {
                     teclado.close(); // Buena práctica: cerrar el Scanner
                 }
             }
+            public class SumaArreglo {
+    public static void main(String[] args) {
+        // Declaramos e inicializamos el arreglo con valores predefinidos
+        int[] numeros = {10, 20, 30, 40, 50};
+        
+        // Variable para acumular la suma, inicializada en 0
+        int suma = 0;
+
+        // Recorremos el arreglo usando un bucle "for-each"
+        for (int numero : numeros) {
+            suma = suma + numero; // También se puede escribir como: suma += numero;
+        }
+
+        System.out.println("Los elementos del arreglo suman en total: " + suma);
+    }
+}
 }
