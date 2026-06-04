@@ -521,6 +521,18 @@ public class Intercambio {
         System.out.println("Después del intercambio: a = " + a + ", b = " + b);
     }
 }
+public class SumaCien {
+    public static void main(String[] args) {
+        int suma = 0; // Aquí iremos acumulando el resultado
+        
+        // El bucle va desde i = 1 hasta i = 100
+        for (int i = 1; i <= 100; i++) {
+            suma = suma + i; // Sumamos el valor actual de 'i' a nuestro acumulador
+        }
+        
+        System.out.println("La suma de los números del 1 al 100 es: " + suma);
+    }
+}
 }
 }
 }
