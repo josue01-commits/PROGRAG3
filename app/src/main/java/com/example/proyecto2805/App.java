@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class VentasTienda {
     public static void main(String[] args) {
-                                                                                try (Scanner scanner = new Scanner(System.in)) {
+try (Scanner scanner = new Scanner(System.in)) {
             double totalVendido = 0;
             int cantidadVentas = 0;
             double ventaActual;
