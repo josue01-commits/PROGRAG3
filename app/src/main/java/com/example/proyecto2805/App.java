@@ -2,9 +2,10 @@ package com.example.proyecto2805;
 
 public class App {
     public static void main(String[] args) {
-        double celsius = 25.0;
-        double fahrenheit = (celsius * 9/5) + 32;
-        System.out.println(celsius + "°C equivalen a " + fahrenheit + "°F");
+        double largo = 10.0;
+        double ancho = 5.0;
+        double perimetro = 2 * (largo + ancho);
+        System.out.println("El perímetro es: " + perimetro);
     }
 }
   
