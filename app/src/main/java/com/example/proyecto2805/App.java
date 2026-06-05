@@ -33,7 +33,7 @@ public class App {
             
             if (cantidadVentas >0) {
                 double promedio = totalVendido / cantidadVentas;
-                System.out.println("promedio por venta: $ "+promedio);
+                System.out.println("promedio por venta: $%.2f\n "+promedio);
             }
         }
     }
