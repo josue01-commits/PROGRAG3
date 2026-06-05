@@ -66,5 +66,7 @@ public class App {
             
             double totalNeto = totalVendido / 1.15;
             System.out.println("monto neto de ventas ( sin iva ): $%.2f\n" + totalNeto);
+            System.out.println("=======================================");
+            System.out.println("que tenga un excelente dia");
     }
 }
