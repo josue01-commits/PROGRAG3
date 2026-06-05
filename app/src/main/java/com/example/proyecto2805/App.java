@@ -2,12 +2,13 @@ package com.example.proyecto2805;
 
 public class App {
     public static void main(String[] args) {
-        int a = 5;
-        int b = 10;
-        int temp = a;
-        a = b;
-        b = temp;
-        System.out.println("Ahora a = " + a + " y b = " + b);
+        int year = 2024;
+        boolean esBisiesto = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+        if (esBisiesto) {
+            System.out.println(year + " es un año bisiesto.");
+        } else {
+            System.out.println(year + " no es bisiesto.");
+        }
     }
 }
   
