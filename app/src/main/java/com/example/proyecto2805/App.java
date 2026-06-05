@@ -54,7 +54,9 @@ public class App {
             }
             if (cantidadVentas > 0) {
             System.out.println("La menor venta registrada hoy fue de: $" + ventaMenor);
-}
+                System.out.println("cantidad de ventas mayores a $50: "+ ventasGrandes);
+            }
+            
         }
     }
 }
