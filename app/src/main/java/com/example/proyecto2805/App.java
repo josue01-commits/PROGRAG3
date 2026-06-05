@@ -21,6 +21,9 @@ public class App {
                 if (ventaActual > 0) {
                     totalVendido = totalVendido + ventaActual;
                     cantidadVentas++;
+                if (ventaActual > ventaMayor){
+                    ventaMayor = ventaActual;
+                }
                 } else if (ventaActual < 0) {
                     System.out.println("Error: No se pueden ingresar ventas negativas.");
                 }
