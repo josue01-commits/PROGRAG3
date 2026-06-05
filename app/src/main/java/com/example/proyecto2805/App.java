@@ -59,6 +59,7 @@ public class App {
             double ivaEstimado = totalVendido * 0.15;
             System.out.println("impuesto estimado recolectado ( IVA 15%%): $%.2f\n" + ivaEstimado);
             
-        }
+            double totalNeto = totalVendido / 1.15;
+            System.out.println("monto neto de ventas ( sin iva ): $%.2f\n" + totalNeto);
     }
 }
