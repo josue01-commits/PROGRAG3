@@ -68,5 +68,10 @@ public class App {
             System.out.println("monto neto de ventas ( sin iva ): $%.2f\n" + totalNeto);
             System.out.println("=======================================");
             System.out.println("que tenga un excelente dia");
+ 
+        }
+           if (totalVendido >= 100){
+               System.out.println("rendimiento del dia meta alcanzada ( dia exitoso)");
+           }
     }
-}
+    
