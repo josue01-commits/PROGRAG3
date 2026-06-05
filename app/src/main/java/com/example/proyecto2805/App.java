@@ -25,6 +25,9 @@ public class App {
                 }
 
             } while (ventaActual != 0 && cantidadVentas < LIMITE_MAXIMO );
+            if (cantidadVentas == LIMITE_MAXIMO) {
+             System.out.println("\n[AVISO: Se alcanzo el limite maximo de transacciones para este turno]");
+}
 
         
             System.out.println("\n=== Resumen del Dia ===");
