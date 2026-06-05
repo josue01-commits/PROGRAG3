@@ -17,6 +17,7 @@ public class App {
             System.out.println("--- Registro de Ventas Diarias(Maximo " + LIMITE_MAXIMO + " ventas)---");
             System.out.println("cajero encargado : " + nombreCajero);
             System.out.println("Ingrese las ventas una por una. Escriba 0 para finalizar el dia.\n");
+            System.out.println("PRUEBA GIT");
             
             do {
                 System.out.print("Ingrese el monto de la venta: $");
@@ -84,4 +85,6 @@ public class App {
            
            }
     }
+    }
+  
     
