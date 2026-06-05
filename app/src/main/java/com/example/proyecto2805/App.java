@@ -66,12 +66,16 @@ public class App {
             
             double totalNeto = totalVendido / 1.15;
             System.out.println("monto neto de ventas ( sin iva ): $%.2f\n" + totalNeto);
+           if (totalVendido >= 100) {
+               System.out.println("rendimiento del dia :  meta alcanzada ( dia exitoso)");
+               
+           } else {
+               System.out.println("rendimiento del dia : ventas por debajo de la meta (regular)");
             System.out.println("=======================================");
             System.out.println("que tenga un excelente dia");
  
         }
-           if (totalVendido >= 100){
-               System.out.println("rendimiento del dia meta alcanzada ( dia exitoso)");
+           
            }
     }
     
