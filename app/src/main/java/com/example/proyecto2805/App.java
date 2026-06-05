@@ -9,6 +9,7 @@ public class App {
             int cantidadVentas = 0;
             double ventaActual;
             final int LIMITE_MAXIMO = 5;
+            double ventaMayor = 0;
 
             System.out.println("--- Registro de Ventas Diarias(Maximo " + LIMITE_MAXIMO + " ventas)---");
             System.out.println("Ingrese las ventas una por una. Escriba 0 para finalizar el dia.\n");
