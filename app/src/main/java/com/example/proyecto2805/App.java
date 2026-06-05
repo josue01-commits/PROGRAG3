@@ -12,6 +12,7 @@ public class App {
             double ventaMayor = 0;
             double ventaMenor = Double.MAX_VALUE;
             int ventasGrandes = 0;
+            String nombreCajero = "  "; 
 
             System.out.println("--- Registro de Ventas Diarias(Maximo " + LIMITE_MAXIMO + " ventas)---");
             System.out.println("Ingrese las ventas una por una. Escriba 0 para finalizar el dia.\n");
