@@ -61,8 +61,14 @@ public class App {
             System.out.println("La menor venta registrada hoy fue de: $" + ventaMenor);
                 System.out.println("cantidad de ventas mayores a $50: "+ ventasGrandes);
             }
+            if ( cantidadVentas > 0 && ventaMenor != Double.MAX_VALUE){
+            System.out.println("la menor venta registrada de hoy fue :$ " + ventaMenor);
+            
+            } else {
+                System.out.println("la menor venta registrada de hoy fue de: $0.0 ");
+                }
             double ivaEstimado = totalVendido * 0.15;
-            System.out.println("impuesto estimado recolectado ( IVA 15%%): $%.2f\n" + ivaEstimado);
+            System.out.printf("impuesto estimado recolectado ( IVA 15%%): $%.2f\n" + ivaEstimado);
             
             double totalNeto = totalVendido / 1.15;
             System.out.println("monto neto de ventas ( sin iva ): $%.2f\n" + totalNeto);
