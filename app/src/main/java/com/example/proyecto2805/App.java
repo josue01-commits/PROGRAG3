@@ -30,6 +30,11 @@ public class App {
             System.out.println("\n=== Resumen del Dia ===");
             System.out.println("Cantidad total de ventas registradas: " + cantidadVentas);
             System.out.println("Monto total vendido: $" + totalVendido);
+            
+            if (cantidadVentas >0) {
+                double promedio = totalVendido / cantidadVentas;
+                System.out.println("promedio por venta: $ "+promedio);
+            }
         }
     }
 }
