@@ -41,6 +41,7 @@ public class App {
             if (cantidadVentas >0) {
                 double promedio = totalVendido / cantidadVentas;
                 System.out.println("promedio por venta: $%.2f\n "+promedio);
+                System.out.println("la mayor venta registrada de hoy fue : $ "+ ventaMayor);
             }
         }
     }
