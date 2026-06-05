@@ -47,6 +47,9 @@ public class App {
                 System.out.println("promedio por venta: $%.2f\n "+promedio);
                 System.out.println("la mayor venta registrada de hoy fue : $ "+ ventaMayor);
             }
+            if (cantidadVentas > 0) {
+            System.out.println("La menor venta registrada hoy fue de: $" + ventaMenor);
+}
         }
     }
 }
