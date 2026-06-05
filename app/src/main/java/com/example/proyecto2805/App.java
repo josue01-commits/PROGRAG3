@@ -2,7 +2,7 @@ package com.example.proyecto2805;
 
 import java.util.Scanner;
 
-public class VentasTienda {
+public class App {
     public static void main(String[] args) {
 try (Scanner scanner = new Scanner(System.in)) {
             double totalVendido = 0;
