@@ -56,6 +56,8 @@ public class App {
             System.out.println("La menor venta registrada hoy fue de: $" + ventaMenor);
                 System.out.println("cantidad de ventas mayores a $50: "+ ventasGrandes);
             }
+            double ivaEstimado = totalVendido * 0.15;
+            System.out.println("impuesto estimado recolectado ( IVA 15%%): $%.2f\n" + ivaEstimado);
             
         }
     }
