@@ -2,12 +2,10 @@ package com.example.proyecto2805;
 
 public class App {
     public static void main(String[] args) {
-        int contador = 5;
-        while (contador > 0) {
-            System.out.println(contador);
-            contador--;
+        int numero = 5;
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(numero + " x " + i + " = " + (numero * i));
         }
-        System.out.println("¡Despegue!");
     }
 }
   
