@@ -2,13 +2,14 @@ package com.example.proyecto2805;
 
 public class App {
     public static void main(String[] args) {
-        int[] numeros = {10, 20, 30, 40, 50};
-        double suma = 0;
+        int[] numeros = {5, 12, 3, 21, 8};
+        int mayor = numeros[0];
         for (int num : numeros) {
-            suma += num;
+            if (num > mayor) {
+                mayor = num;
+            }
         }
-        double promedio = suma / numeros.length;
-        System.out.println("El promedio es: " + promedio);
+        System.out.println("El número mayor es: " + mayor);
     }
 }
   
